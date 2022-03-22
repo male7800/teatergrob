@@ -84,27 +84,40 @@
         object-fit: cover;
       }
 
-      #kampagne {
+      .kampagne {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* width: 100%;
+        width: 100%;
         height: 100%;
-        object-fit: cover; */
+        object-fit: cover;
       }
 
-      #kampagnetekst1 {
+      .kampagnetekst1 {
         grid-column: 1;
       }
-      #kampagnetekst2 {
+      .kampagnetekst2 {
+        grid-column: 1;
+      }
+
+      .kampagnebillede1 {
         grid-column: 2;
       }
 
-      #kampagnebillede1 {
+      .kampagnebillede2 {
         grid-column: 2;
       }
 
-      #kampagnebillede2 {
-        grid-column: 2;
+      button {
+        border-width: 0;
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: #ffff;
+      }
+      button:hover {
+        border-width: 0;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #ffff;
       }
     </style>
   </head>
@@ -130,7 +143,7 @@
           </div>
           <div class="splashtekst2">
             <!-- Indsæt knap her hvor der står -->
-            <h2>LÆS MERE HER!</h2>
+            <button>LÆS MERE HER!</button>
           </div>
         </div>
       </section>
