@@ -28,89 +28,58 @@
         background-image: url("baggrundpink.svg");
         background-color: #fce3ed;
       }
-      #step {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-        margin-top: 5%;
-        text-align: center;
+
+      nav img {
+        width: 25%;
+        margin: 5%;
       }
-      .step1 {
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      .step2 {
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      .step3 {
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      .step4 {
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      .step5 {
-        margin-left: 2%;
-        margin-right: 2%;
-      }
+
       .splashvideo {
         border-style: solid;
         border-color: black;
-        grid-column: 1/3;
-        grid-row: 1/5;
+        grid-column: 1;
+        grid-row: 1/4;
         margin-bottom: 50px;
-        margin-left: 50px;
         margin-top: 10px;
       }
       .splash {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         margin-bottom: 10%;
       }
-      .splashtekst {
-        /* display: grid;
-        grid-template-rows: 1fr 1fr; */
-        text-align: center;
-        grid-column: 3;
-        grid-row: 2/3;
-      }
-      #billeder {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin-bottom: 10%;
-      }
-      .billede1 {
-        margin: 2%;
-      }
-      .billede2 {
-        margin: 2%;
-      }
-      .billede3 {
-        margin: 2%;
+
+      a {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: "Viga", sans-serif;
       }
 
-      #kampagne {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 5%;
-      }
-
-      .kampagnetekst1 {
-        grid-column: 1;
+      a:hover {
+        border-width: 0;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: "Viga", sans-serif;
       }
 
       h1 {
         font-family: "Bangers", cursive;
         margin-bottom: 2%;
         font-size: 2.5rem;
+      }
+
+      .splashtekst1 {
+        text-align: center;
+      }
+
+      .splashtekst2 {
+        text-align: center;
       }
 
       h2 {
@@ -123,66 +92,165 @@
         padding-right: 100px;
       }
 
-      .kampagnetekst2 {
-        grid-column: 1;
+      .billede1 {
+        margin-bottom: 5%;
+        grid-row: 3;
       }
-
-      .kampagnebillede1 {
-        grid-column: 2;
-        margin-right: 5%;
+      .billede2 {
+        margin-bottom: 5%;
+      }
+      .billede3 {
         margin-bottom: 5%;
       }
 
-      .kampagnebillede2 {
-        grid-column: 2;
-        margin-right: 5%;
+      #billeder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 10%;
       }
 
-      .kampagnebillede1 img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+      #step {
+        display: none;
       }
 
-      .kampagnebillede2 img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+      .step1_1 {
+        text-align: center;
       }
 
-      a {
-        border-width: 0;
-        text-decoration: underline;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-        font-family: "Viga", sans-serif;
+      .step2_2 {
+        text-align: center;
       }
-      a:hover {
-        border-width: 0;
-        text-decoration: none;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-        font-family: "Viga", sans-serif;
+
+      .step3_3 {
+        text-align: center;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-image: none;
+        background-color: #f3c0d5;
       }
       .ikoner img {
-        width: 2%;
-        height: 2%;
+        width: 10%;
+        height: 10%;
         object-fit: cover;
         display: flex;
         float: left;
         margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
       .ikoner {
-        margin-top: 10rem;
+        margin-top: 3rem;
+        grid-column: 2/5;
       }
-      nav img {
-        width: 10%;
-        margin-left: 2%;
-        margin-top: 2%;
+
+      .kampagnebillede2 img {
+        margin-bottom: 50%;
+      }
+
+      @media (min-width: 1000px) {
+        .splashvideo {
+          border-style: solid;
+          border-color: black;
+          grid-column: 1/3;
+          grid-row: 1/5;
+          margin-bottom: 50px;
+          margin-left: 50px;
+          margin-top: 10px;
+        }
+        .splash {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          margin-bottom: 10%;
+        }
+        .splashtekst {
+          text-align: center;
+          grid-column: 3;
+          grid-row: 2/3;
+        }
+        #billeder {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .billede1 {
+          margin: 2%;
+        }
+        .billede2 {
+          margin: 2%;
+        }
+        .billede3 {
+          margin: 2%;
+        }
+
+        #kampagne {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-left: 5%;
+        }
+
+        .kampagnetekst1 {
+          grid-column: 1;
+        }
+
+        .kampagnetekst2 {
+          grid-column: 1;
+        }
+
+        .kampagnebillede1 {
+          grid-column: 2;
+          margin-right: 5%;
+          margin-bottom: 5%;
+        }
+
+        .kampagnebillede2 {
+          grid-column: 2;
+          margin-right: 5%;
+        }
+
+        .kampagnebillede1 img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+
+        .kampagnebillede2 img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+
+        footer {
+          display: grid;
+          grid-template-rows: -3fr;
+          background-image: none;
+          background-color: #f3c0d5;
+        }
+        .ikoner img {
+          width: 2%;
+          height: 2%;
+          object-fit: cover;
+          display: flex;
+          float: left;
+          margin-top: -40px;
+          margin-right: 20px;
+          margin-left: 20px;
+          margin-bottom: 20px;
+        }
+        .ikoner {
+          margin-top: 5rem;
+        }
+        nav img {
+          width: 10%;
+          margin-left: 2%;
+          margin-top: 2%;
+        }
       }
     </style>
   </head>
@@ -210,37 +278,35 @@
           </div>
         </div>
       </section>
-      <section id="step">
-        <div class="step1">
-          <h2>1. TAG UD</h2>
-        </div>
-        <div class="step2">
-          <h2>2. FIND BILLETTEN</h2>
-        </div>
-        <div class="step3">
-          <h2>3. TAG ET BILLEDE</h2>
-        </div>
-        <div class="step4">
-          <h2>4. VIND BILLETTEN</h2>
-        </div>
-        <div class="step5">
-          <h2>5. TAG I GROB</h2>
-        </div>
-      </section>
       <section id="billeder">
-        <div class="billede1">
-          <img src="findbillet.png" alt="findbillet" />
+        <div class="kolonne1">
+          <div class="step1_1">
+            <h2>1. TAG UD OG FIND BILLETTEN</h2>
+          </div>
+          <div class="billede1">
+            <img src="findbillet.png" alt="findbillet" />
+          </div>
         </div>
-        <div class="billede2">
-          <img src="tagetbillede.png" alt="tagetbillede" />
+        <div class="kolonne2">
+          <div class="step2_2">
+            <h2>2. TAG ET BILLEDE OG VIND BILETTEN</h2>
+          </div>
+          <div class="billede2">
+            <img src="tagetbillede.png" alt="tagetbillede" />
+          </div>
         </div>
-        <div class="billede3">
-          <img src="grob.png" alt="grob" />
+        <div class="kolonne3">
+          <div class="step3_3">
+            <h2>3. TAG I GROB</h2>
+          </div>
+          <div class="billede3">
+            <img src="grob.png" alt="grob" />
+          </div>
         </div>
       </section>
       <section id="kampagne">
         <div class="kampagnetekst1">
-          <h1>Tusinde verdner</h1>
+          <h1>1000 verdener</h1>
           <h2>Ideen</h2>
           <p>
             Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
