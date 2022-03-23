@@ -12,28 +12,34 @@
       rel="stylesheet"
     />
     <style>
+      /* Mobile first*/
+      /* fjerner margin og gør alt til boarder-box */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
+      /* Instillinger for alle billeedr */
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
       }
 
+      /* Baggrund*/
       html {
         background-image: url("baggrundpink.svg");
         background-color: #fce3ed;
       }
 
+      /* Logo*/
       nav img {
         width: 25%;
         margin: 5%;
       }
 
+      /* Video*/
       .splashvideo {
         border-style: solid;
         border-color: black;
@@ -49,6 +55,15 @@
         margin-bottom: 10%;
       }
 
+      .splashtekst1 {
+        text-align: center;
+      }
+
+      .splashtekst2 {
+        text-align: center;
+      }
+
+      /* læs mere link*/
       a {
         text-decoration: underline;
         cursor: pointer;
@@ -68,18 +83,11 @@
         font-family: "Viga", sans-serif;
       }
 
+      /* Fonts*/
       h1 {
         font-family: "Bangers", cursive;
         margin-bottom: 2%;
         font-size: 2.5rem;
-      }
-
-      .splashtekst1 {
-        text-align: center;
-      }
-
-      .splashtekst2 {
-        text-align: center;
       }
 
       h2 {
@@ -91,6 +99,7 @@
         line-height: 200%;
       }
 
+      /* Grid med de 3 første billeder*/
       .billede1 {
         margin-bottom: 5%;
         grid-row: 3;
@@ -109,6 +118,7 @@
         margin-bottom: 10%;
       }
 
+      /* Placering af steps*/
       .step1_1 {
         text-align: center;
       }
@@ -121,6 +131,25 @@
         text-align: center;
       }
 
+      /* Kampagne delen*/
+      .kampagnebillede2 img {
+        margin-bottom: 4rem;
+      }
+
+      .kampagnetekst1 h1,
+      h2 {
+        text-align: center;
+      }
+
+      .kampagnetekst1 {
+        margin: 1rem;
+      }
+
+      .kampagnetekst2 {
+        margin: 1rem;
+      }
+
+      /* Footer og ikoner*/
       footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -142,24 +171,9 @@
         grid-column: 2/5;
       }
 
-      .kampagnebillede2 img {
-        margin-bottom: 4rem;
-      }
-
-      .kampagnetekst1 h1,
-      h2 {
-        text-align: center;
-      }
-
-      .kampagnetekst1 {
-        margin: 1rem;
-      }
-
-      .kampagnetekst2 {
-        margin: 1rem;
-      }
-
       @media (min-width: 700px) {
+        /* Web version*/
+        /* Video sektion*/
         .splashvideo {
           border-style: solid;
           border-color: black;
@@ -180,6 +194,7 @@
           grid-column: 3;
           grid-row: 2/3;
         }
+        /* step sektion*/
         #billeder {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -210,6 +225,7 @@
           text-align: center;
         }
 
+        /*Kampagne sektion*/
         #kampagne {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -265,6 +281,7 @@
           padding-right: 100px;
         }
 
+        /* Footer og ikoner*/
         footer {
           display: grid;
           background-image: none;
@@ -283,6 +300,7 @@
           margin-top: 5rem;
           grid-column: 1/4;
         }
+        /* Logo*/
         nav img {
           width: 10%;
           margin-left: 2%;
